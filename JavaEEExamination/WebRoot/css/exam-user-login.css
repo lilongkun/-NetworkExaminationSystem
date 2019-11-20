@@ -1,0 +1,131 @@
+/*全局属性*/
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+	background-image: url(../img/bgd3.jpg);
+}
+.fl {
+   float: left;
+}
+.fr {
+    float: right;
+}
+.positonAb {
+    position: absolute;
+}
+.littleFinger {
+    cursor: pointer;
+}
+.guide5:hover{
+   text-decoration: underline;
+}
+.guide6:hover{
+   text-decoration: underline;
+}
+
+/*从上而下进入*/
+@keyframes fadeInDownBig {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -2000px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+/*向右移除*/
+@keyframes bounceOutRight {
+    20% {
+        opacity: 1;
+        transform: translate3d(-20px, 0, 0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translate3d(2000px, 0, 0);
+    }
+}
+
+#showError{
+	
+}
+/* 主启界面*/
+.main-start-interface {
+    /*display: none;*/
+    width: 400px;
+    height: 400px;
+    position:absolute;
+    top:50%;
+    left:45%;
+    margin:-250px 0 0 -250px;
+	background-color: #BED6F8;
+    background-size: 650px 500px;
+    -webkit-animation: fadeInDownBig 2s ease 0s 1 both;
+}
+.guide1 {
+	font-size: 38px;
+    left: 22%;
+    top: 0%;
+    color: #B385DE;
+}
+.guide2 {
+	height: 40px;
+	width: 300px;
+    left: 12%;
+    top: 30%;
+    color: #09C085;
+}
+.guide3 {
+	height: 40px;
+	width: 300px;
+    left: 12%;
+    top: 50%;
+    color: #F47A45;
+}
+.guide4 {
+	height: 40px;
+	width: 300px;
+	background-color: #00AAEE;
+	border-radius: 10px;
+    left: 12%;
+    top: 80%;
+    color: white;
+}
+.guide5 {
+    left:26%;
+    top: 15%;
+    color: #F05655;
+}
+.guide6{
+	left: 56%;
+	top: 15%;
+	color: #F05655;
+}
+.guide7{
+	left:75%;
+	top:-30%;
+}
+.guide8{
+	left: 53%;
+	top: 90%
+}
+.guide9{
+	font-family: STKaiti;
+	left:30%;
+	top:70%;
+	font-size: 20px;
+	color: red;
+	
+}
+

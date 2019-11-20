@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="default" namespace="/" extends="struts-default">
+    	<interceptors>
+    		<interceptor name="loginInterceptor" class="com.llk.interceptor.LoginInterceptor"/>
+    	</interceptors>
+    <!-- <global-results>
+    	<result name="showLoginView">/login.jsp</result>
+    </global-results> -->
+        <action name="user_*" class="com.llk.action.UserAction" method="{1}">
+        	<result name="registerSuccess" type="redirect">/login.jsp</result>
+        	<result name="registerFailed" type="redirect">/register.jsp</result>
+        	<result name="loginSuccess">/index.jsp</result>
+        	<result name="loginFailed">/login.jsp</result>
+        </action> 
+        <action name="menu_*" class="com.llk.action.MenuAction" method="{1}">
+        
+        	 <interceptor-ref name="loginInterceptor"/>
+        	<result name="showLoginView">/register.jsp</result> 
+        </action>
+        <action name="paper_*" class="com.llk.action.PaperAction" method="{1}">
+        	<result name="savePaperFailed">/exam/exam_insert.jsp</result>
+        	<result name="showTestView" type="redirect">/exam/exam_test.jsp</result>
+        	<result name="showSavePaperView" type="redirect">/exam/exam_insert.jsp</result>
+        	<interceptor-ref name="loginInterceptor"/>
+        	 <!-- <result name="showLoginView">/login.jsp</result> -->
+        </action>
+    </package>
+</struts>

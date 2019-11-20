@@ -1,0 +1,58 @@
+
+		html,body{
+		    height: 100%;
+		    width: 100%;
+		    
+		}
+		.list-div{
+			width: 1200px;
+			height: 600px;
+			position:absolute;
+			top:40%;
+			left:36%;
+			margin:-250px 0 0 -250px;
+			background-color: white;
+		}
+		.list-div-head{
+			width: 1200px;
+			height: 40px;
+			position:absolute;
+			background-color: #F3F3F3;
+			border-bottom: solid 2px #A5E1D6;
+		}
+		.list-div-head-bar1{
+			position: absolute;
+			left: 25%;
+		}
+		.list-div-head-bar2{
+			position: absolute;
+			left: 60%;
+		}
+		.checked{
+			width: 200px;
+			height: 40px;
+			font-size: 20px;
+			color: gray;
+			border-top: solid 2px #A5E1D6;
+			border-right: solid 1px #A5E1D6;
+			border-left: solid 1px #A5E1D6;
+			background-color: white;
+			cursor: pointer;
+			text-align: center;
+			line-height: 35px;
+		}
+		.unchecked{
+			width: 200px;
+			height: 40px;
+			font-size: 20px;
+			color: gray;
+			border-bottom: solid 2px #A5E1D6;
+			text-align: center;
+			line-height: 35px;
+			cursor: pointer;
+		}
+		.list-div-main{
+			position: absolute;
+			top:10%;
+		}
+		

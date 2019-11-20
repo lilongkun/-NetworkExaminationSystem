@@ -1,0 +1,27 @@
+			h4{
+				font-size: 50px;
+				color: red;
+				text-align:center;
+				}
+				tr{
+					height: 60px;
+				}
+				
+				#registerdiv{
+					border: solid 1px #FF0000;
+					border-radius: 10px;
+					width: 500px;
+					margin: auto;
+					margin-top: 40px;
+						
+				}
+				/*…Ë÷√table*/
+				table{
+					margin: auto;
+					color: white;	
+					margin-left: 90px;
+				}
+				span{
+					font-size: 13px;
+				}
+				
